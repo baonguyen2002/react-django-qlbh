@@ -235,8 +235,9 @@ const CTHD = () => {
         return;
       }
       axios
-        .get(`http://127.0.0.1:8000/api/hoadon/?search=${value}`)
+        .get(`http://127.0.0.1:8000/api/cthd/?search=${value}`)
         .then((res) => {
+          //console.log(res.data);
           setCthd(res.data);
           // getAllKhachHang();
         })
